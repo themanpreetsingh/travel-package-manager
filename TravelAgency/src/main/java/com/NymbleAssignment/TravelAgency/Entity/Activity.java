@@ -8,6 +8,17 @@ public class Activity {
 	private int maxCapacity;
 	private int availableCapacity;
 	private Destination destination;
+
+	public Activity() {}
+
+	public Activity(String name, String description, double cost, int maxCapacity, int availableCapacity, Destination destination) {
+		this.name = name;
+		this.description = description;
+		this.cost = cost;
+		this.maxCapacity = maxCapacity;
+		this.availableCapacity = availableCapacity;
+		this.destination = destination;
+	}
 	
 	public String getName() {
 		return name;
