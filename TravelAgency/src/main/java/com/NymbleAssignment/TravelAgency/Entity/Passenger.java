@@ -10,6 +10,18 @@ public class Passenger {
 	private PassengerType passengerType;
 	private double balance;
 	private List<Activity> activitiesSignedUp;
+
+	public Passenger() {
+		this.activitiesSignedUp = new ArrayList<>();
+	}
+
+	public Passenger(String name, int passengerNumber, PassengerType passengerType, double balance) {
+		this.name = name;
+		this.passengerNumber = passengerNumber;
+		this.passengerType = passengerType;
+		this.balance = balance;
+		this.activitiesSignedUp = new ArrayList<>();
+	}
 	
 	public void printPassengerDetails() {
 		System.out.println("Name: " + this.getName());
